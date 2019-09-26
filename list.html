@@ -2,11 +2,6 @@
 layout: page
 title: List of seminars
 ---
-<ul class="posts">
-	  {% for post in site.posts %}
-	    	<li><span>{{ post.date | date: "%b %d, %Y" }}</span> » <a href="{{ post.url | relative_url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-	  {% endfor %}
-</ul>
 
  <table style="width:100%">
   <tr>
@@ -15,7 +10,6 @@ title: List of seminars
     <th>Topic</th>
   </tr>
   {% for post in site.posts %}
-	    	<li><span>{{ post.date | date: "%b %d, %Y" }}</span> » <a href="{{ post.url | relative_url }}" title="{{ post.title }}">{{ post.title }}</a></li>
   <tr>
     <td>{{ post.date | date: "%b %d, %Y" }}</td>
     <td>{{ post.speaker }}</td>
