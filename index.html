@@ -13,12 +13,12 @@ use-site-title: true
 
     {% if post.abstract %}
     <h3 class="post-subtitle">
-      {{ post.abstract }}
+      Abstract: {{ post.abstract }}
     </h3>
     {% endif %}
     </a>
 
-    
+
     <p class="post-meta">
       {{ post.date | date: site.date_format }}
     </p>
