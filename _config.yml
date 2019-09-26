@@ -1,7 +1,7 @@
 # --- General options --- #
 
 # Name of website
-title: Student Seminar in Math at IITB
+title: Home
 
 # Short description of your site
 description: Information regarding the student run seminars in the department of Mathematics, IIT Bombay
@@ -237,4 +237,4 @@ plugins:
 
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
-paginate_path: "/page:num/"
+paginate_path: "/page/"
