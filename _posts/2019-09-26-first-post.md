@@ -2,7 +2,19 @@
 layout: post
 title: First post!
 speaker: Som Phene
-abstract: On mathematics and about mathematics
+abstract: Differentiable Manifolds form the most basic and natural objects in advanced calculus as is seen by the natural form that Stokes Theorem takes in the manifold setup. In this talk we will give an overview of Differentiable Manifolds including basic definitions and examples of
+submanifolds as well as abstract manifolds with applications to Lie Groups, Riemannian
+Geometry, Dynamical Systems and so on.
 ---
 
-This is our first post, how exciting!
+## Speaker
+{{ post.speaker }}
+
+## Abstract
+{{ post.abstract }}
+
+## Time 
+19:30, 26th September, 2019
+
+## Venue
+Room 105, Mathematics Department, IIT Bombay
