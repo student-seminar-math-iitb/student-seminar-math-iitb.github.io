@@ -16,8 +16,11 @@ layout: base
         <h2> Time </h2>
         {{ page.time }}, {{ page.date | date: "%d-%m-%Y" }}
         <h2> Venue </h2>
-        {{ page.venue }}
-      </article>
+        {{ page.venue }} </br>
+        {% if page.notes %}
+        <h2> <a href="{{ '/files/notes' | relative_url }}/{{- page.notes -}}"> Notes </a> </h2>
+        {% endif %}
+        </article>
 
       </br>
       {% if page.tags.size > 0 %}
@@ -40,12 +43,12 @@ layout: base
       <ul class="pager blog-pager">
         {% if page.previous.url %}
         <li class="previous">
-          <a href="{{ page.previous.url | relative_url }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Previous Post</a>
+          <a href="{{ page.previous.url | relative_url }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Previous</a>
         </li>
         {% endif %}
         {% if page.next.url %}
         <li class="next">
-          <a href="{{ page.next.url | relative_url }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Next Post &rarr;</a>
+          <a href="{{ page.next.url | relative_url }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Next &rarr;</a>
         </li>
         {% endif %}
       </ul>
